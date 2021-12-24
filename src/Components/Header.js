@@ -6,14 +6,17 @@ class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
+    const linkedinURL = this.props.data.social1.linkedin;
+    const githubURL = this.props.data.social1.github;
+    const twitterURL = this.props.data.social1.twitter;
+    const instagramURL = this.props.data.social1.instagram;
+    const leetcodeURL = this.props.data.social1.leetcode;
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="lines" bg={true} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -62,21 +65,41 @@ class Header extends Component {
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>{description}</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
-                <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
-                </a>
+                <li key="linkedin">
+                  <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li key="github">
+                  <a href={githubURL} target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-github"></i>
+                  </a>
+                </li>
+                <li key="instagram">
+                  <a href={instagramURL} target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li key="twitter">
+                  <a href={twitterURL} target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li key="leetcode">
+                  <a href={leetcodeURL} target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-code"></i>
+                  </a>
+                </li>
               </ul>
             </Fade>
-          </div>
         </div>
+      </div>
+
 
         <p className="scrolldown">
           <a className="smoothscroll" href="#about">

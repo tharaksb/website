@@ -18,7 +18,7 @@ class About extends Component {
 
     return (
       <section id="about">
-        <Fade duration={1000}>
+        <Fade duration={1200}>
           <div className="row">
             <div className="three columns">
               <img

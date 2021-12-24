@@ -1,22 +1,29 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"Tharak Sai Bobba",
+    "description":"Graduate Student, Computer Scince @ University of California - Irvine",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"Actively looking for Software Development Internship roles starting from Summer'22.\nI have an overall experience of 2+ years with F5 Networks and Practo.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "email": "tbobba@uci.edu",
+    "phone": "949-992-6147",
     "github":"https://github.com/nordicgiant2/react-nice-resume",
     "project":"https://github.com/nordicgiant2/react-nice-resume",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"3801 Parkview Ln",
+      "city":"Irvine",
+      "state":"CA",
+      "zip": "92612"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"https://drive.google.com/uc?export=download&id=1VABL7Xk_wmltLCL8ynAoK8_2c91U2cKX",
+    "social1":{
+      "linkedin": "https://www.linkedin.com/in/bobbatharaksai/",
+      "github": "https://github.com/bobbatharaksai",
+      "instagram": "https://www.instagram.com/bobbatharaksai",
+      "twitter": "https://twitter.com/bobbatharaksai",
+      "leetcode": "https://leetcode.com/saitharak333/"
+    },
     "social":[
       {
         "name":"facebook",
