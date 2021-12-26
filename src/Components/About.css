@@ -1,0 +1,12 @@
+about-text {
+    width: 100%;
+    max-width: 5000px;
+    font-family: "Verdana";
+}
+.about-heading {
+    padding-bottom: 15px;
+}
+.about-point {
+    max-width: 2000px;
+    font-family: "Verdana"; 
+}

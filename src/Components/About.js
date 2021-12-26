@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './About.css'
 import Fade from "react-reveal";
 
 class About extends Component {
@@ -28,9 +29,28 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
-
-              <p>{bio}</p>
+              <div className="about-text">
+                <h2 className="about-heading">
+                About Me{' '}
+                <span role="img" aria-label="lightning">
+                  😄
+                </span>
+                </h2>
+                <p className="about-point">
+                  <span role="img" aria-label="lightning">
+                    ⚡
+                  </span>{' '}
+                  A Computer Science Graduate Student at University of California, Irvine. <br />
+                  <span role="img" aria-label="lightning">
+                    ⚡
+                  </span>{' '}
+                  Actively seeking for Software Development Internship roles starting from Summer'22. <br />
+                  <span role="img" aria-label="lightning">
+                    ⚡
+                  </span>{' '}
+                  I have an overall experience of 2 years in Software Development with F5 Inc & Practo.
+                </p>
+              </div>
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
@@ -50,8 +70,8 @@ class About extends Component {
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
+                    <a href={resumeDownload} className="button" target="_blank" rel="noopener noreferrer">
+                      <i className="fa fa-download"></i> Resume
                     </a>
                   </p>
                 </div>
