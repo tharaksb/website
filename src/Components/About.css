@@ -10,3 +10,6 @@ about-text {
     max-width: 2000px;
     font-family: "Verdana"; 
 }
+.location-wrapper {
+    color: white;
+}

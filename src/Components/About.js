@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { GoLocation } from 'react-icons/go';
+import { AiFillDownCircle } from 'react-icons/ai';
 import './About.css'
 import Fade from "react-reveal";
 
@@ -51,23 +53,21 @@ class About extends Component {
                   I have an overall experience of 2 years in Software Development with F5 Inc & Practo.
                 </p>
               </div>
+
               <div className="row">
+
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
+
+                  <h6 className="location-wrapper"> <GoLocation /> {' '} {city}{', '} {state} </h6> <br />
+
+                  <h2>Contact Me {' '}
+                    <a className="smoothscroll" href="#contact">
+                      <AiFillDownCircle size={27}/>
+                    </a>
+                  </h2>
+
                 </div>
+
                 <div className="columns download">
                   <p>
                     <a href={resumeDownload} className="button" target="_blank" rel="noopener noreferrer">
@@ -75,6 +75,7 @@ class About extends Component {
                     </a>
                   </p>
                 </div>
+
               </div>
             </div>
           </div>
