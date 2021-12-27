@@ -2,7 +2,7 @@
   "main": {
     "name":"Tharak Sai Bobba",
     "description":"Graduate Student, Computer Scince @ University of California - Irvine",
-    "image":"profilepic.jpg",
+    "image":"profilePic.png",
     "bio":"Actively looking for Software Development Internship roles starting from Summer'22.\nI have an overall experience of 2+ years with F5 Networks and Practo.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "tbobba@uci.edu",
@@ -56,60 +56,100 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of California, Irvine",
+        "degree":"Master of Science, Computer Science (Networked Systems)",
+        "graduated":"Decemeber 2022",
+        "description":"Courses: Design and Analysis of Algorithms, Machine Learning, Distributed Systems, Systems for ML, Computer Networks"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"National Institute of Technology, Calicut",
+        "degree":"Bachelors in Technology, Communication Engineering",
+        "graduated":"April 2019",
+        "description":"Courses: Data Structures with C++, Pattern Recognition, Computer Architechture, Data Compression, Introdution to Programming, Computer Networks"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"F5 Networks",
+        "title":"Software Engineer ",
+        "years":"September 2019 - August 2021",
+        "description": [
+          "Developed complex application signatures for Bittorent and various VPN, VOIP and streaming media apps.",
+          "Designed in-memory caching for URL-CAT component, enhanced message passing between two threads.",
+          "Identified deprecated app signatures and refactored classifiers to achieve overall performance gain of 5%.",
+          "Improved productivity of team 3 times by developing a signature generation tool from captures using NLP."
+        ]
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Practo",
+        "title":"Software Devlopment Intern",
+        "years":"May 2018 - July 2018",
+        "description":[
+          "Optimized the user DB Queries with better indexing practices and attained a performance gain of 8%.",
+          "Refactored Invoice generation component on React-SpringBoot, authored automation with 80% coverage."
+        ]
       }
     ],
     "skills":[
       {
         "name":"Python",
-        "level":"60%"
+        "image":"https://img.icons8.com/color/96/000000/python--v2.png"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "name":"C++",
+        "image":"https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"
       },
       {
-        "name":"ReactJs",
-        "level":"50%"
+        "name":"C",
+        "image":"https://img.icons8.com/color/96/000000/c-programming.png"
+      },
+      {
+        "name":"JavaScript",
+        "image":"https://img.icons8.com/ios/100/000000/javascript--v2.png"
+      },
+      {
+        "name":"Java",
+        "image":"https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v2.png"
+      },
+      {
+        "name":"HTML",
+        "image":"https://img.icons8.com/ios/100/000000/html.png"
       },
       {
         "name":"CSS",
-        "level":"90%"
+        "image":"https://img.icons8.com/ios/100/000000/css.png"
       },
       {
-        "name":"PHP",
-        "level":"80%"
+        "name":"Golang",
+        "image":"https://img.icons8.com/color/96/000000/golang.png"
       },
       {
-        "name":"Swift",
-        "level":"50%"
+        "name":"MySQL",
+        "image":"https://img.icons8.com/color/96/000000/mysql-logo.png"
       },
       {
-        "name":"JAVA",
-        "level":"80%"
+        "name":"ReactJS",
+        "image":"https://img.icons8.com/bubbles/100/000000/react.png"
+      },
+      {
+        "name":"SpringBoot",
+        "image":"https://img.icons8.com/color/96/000000/spring-logo.png"
+      },
+      {
+        "name":"Selenium",
+        "image":"https://img.icons8.com/ios-filled/100/000000/selenium-test-automation.png"
+      },
+      {
+        "name":"Django",
+        "image":"https://img.icons8.com/ios-filled/100/000000/django.png"
+      },
+      {
+        "name":"TensorFlow",
+        "image":"https://img.icons8.com/color/96/000000/tensorflow.png"
+      },
+      {
+        "name":"GITHUB",
+        "image":"https://img.icons8.com/bubbles/100/000000/github.png"
       }
     ]
   },

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { SiPython } from 'react-icons/si';
 import Slide from "react-reveal";
+import './Resume.css'
 
 class Resume extends Component {
   getRandomColor() {
@@ -14,7 +16,7 @@ class Resume extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const skillmessage = this.props.data.skillmessage;
+    const skills = this.props.data.skills;
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
@@ -28,6 +30,15 @@ class Resume extends Component {
       );
     });
 
+    function getWorkDescription(points) {
+      let arr = [];
+      console.log(points);
+      points.forEach(element => {
+        arr.push(<p className="workDescPoints"> {element} </p>);
+      });
+      return arr;
+    }
+
     const work = this.props.data.work.map(function (work) {
       return (
         <div key={work.company}>
@@ -36,23 +47,25 @@ class Resume extends Component {
             {work.title}
             <span>&bull;</span> <em className="date">{work.years}</em>
           </p>
-          <p>{work.description}</p>
+          <div className="workDesc"> 
+            {getWorkDescription(work.description)}
+          </div>
         </div>
       );
     });
 
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
-
-      return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
-      );
-    });
+    function getSkills() {
+      let arr = [];
+      skills.forEach(skill => {
+        arr.push(
+        <div className="item">
+          <img src={skill.image}/>
+          <p style={{ textAlign: "center" }} > {skill.name} </p>
+        </div>
+        );
+      })
+      return arr; 
+    }
 
     return (
       <section id="resume">
@@ -93,11 +106,10 @@ class Resume extends Component {
             </div>
 
             <div className="nine columns main-col">
-              <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
+              <div className="container">
+                {getSkills()}
               </div>
+
             </div>
           </div>
         </Slide>

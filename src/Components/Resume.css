@@ -1,0 +1,19 @@
+.workDesc {
+    padding-bottom: 2.7%;
+}
+.workDescPoints {
+    margin: 0 0 0 0;
+}
+#resume .main-col {
+    padding-right: 0%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+    grid-gap: 5rem;
+    grid-auto-flow: row;
+}
+.profile-pic {
+    border-radius: 50%;
+    border: 0.2rem solid #0be779;
+}
