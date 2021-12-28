@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {Card} from 'react-bootstrap';
 import Slide from "react-reveal";
 import './Resume.css'
+import ieeeImage from './images/802.11ah-wifi-halow-FI.png'
+import evcImage from './images/3gpp.png'
 
 class Resume extends Component {
 
@@ -9,7 +11,6 @@ class Resume extends Component {
     if (!this.props.data) return null;
 
     const skills = this.props.data.skills;
-    const publications = this.props.data.publications;
     const projects = this.props.data.projects;
     const education = this.props.data.education.map(function (education) {
       return (
@@ -58,25 +59,6 @@ class Resume extends Component {
         );
       })
       return arr; 
-    }
-
-    function getPublications() {
-      let arr = [];
-      publications.forEach(element => {
-        arr.push(
-          <div className="item">
-            <a href={element.url} target="_blank" rel="noopener noreferrer" color="white">
-              <Card border="light" style={{ width: '27rem' }}>
-                <Card.Img variant="top" src={"images/" + element.image}/>
-                <Card.Body>
-                  <Card.Title>{element.title}</Card.Title>
-                </Card.Body>
-              </Card>
-            </a>
-          </div>
-        );
-      });
-      return arr;
     }
 
     function getProjects() {
@@ -151,7 +133,27 @@ class Resume extends Component {
 
             <div className="nine columns main-col">
               <div className="publs-container">
-                {getPublications()}
+                <div className="item">
+                  <a href={"https://ieeexplore.ieee.org/document/9279391"} target="_blank" rel="noopener noreferrer" color="white">
+                    <Card border="light" style={{ width: '27rem' }}>
+                      <Card.Img variant="top" src={ieeeImage}/>
+                      <Card.Body>
+                        <Card.Title>{"Dynamic Channel Access Scheme"}</Card.Title>
+                      </Card.Body>
+                    </Card>
+                  </a>
+                </div>
+
+                <div className="item">
+                <a href={"https://link.springer.com/chapter/10.1007/978-981-15-2612-1_13"} target="_blank" rel="noopener noreferrer" color="white">
+                  <Card border="light" style={{ width: '27rem' }}>
+                    <Card.Img variant="top" src={evcImage}/>
+                    <Card.Body>
+                      <Card.Title>{"Seven Stage Speech Classifier"}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </a>
+                </div>
               </div>
             </div>
           </div>

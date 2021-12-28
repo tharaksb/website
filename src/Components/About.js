@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { GoLocation } from 'react-icons/go';
 import './About.css'
+import profileImage from './images/profilepic.png'
 import Fade from "react-reveal";
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
-    const profilepic = "images/" + this.props.data.image;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
     const resumeDownload = this.props.data.resumedownload;
@@ -18,8 +18,8 @@ class About extends Component {
             <div className="three columns">
               <img
                 className="profile-pic"
-                src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                src={profileImage}
+                alt="Profile Pic"
               />
             </div>
             <div className="nine columns main-col">

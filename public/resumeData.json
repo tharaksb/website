@@ -1,19 +1,12 @@
 {
   "main": {
     "name":"Tharak Sai Bobba",
-    "image":"profilePic.png",
+    "image":"profilepic.png",
     "address":{
       "city":"Irvine",
       "state":"California"
     },
     "resumedownload":"https://drive.google.com/uc?export=download&id=1VABL7Xk_wmltLCL8ynAoK8_2c91U2cKX",
-    "social1":{
-      "linkedin": "https://www.linkedin.com/in/bobbatharaksai/",
-      "github": "https://github.com/bobbatharaksai",
-      "instagram": "https://www.instagram.com/bobbatharaksai",
-      "twitter": "https://twitter.com/bobbatharaksai",
-      "leetcode": "https://leetcode.com/saitharak333/"
-    },
     "social":[
       {
         "name":"linkedin",
@@ -43,7 +36,6 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
         "school":"University of California, Irvine",
