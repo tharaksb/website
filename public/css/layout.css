@@ -69,7 +69,7 @@ header .banner-text h3 {
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #BCC6CC;
 }
 header .banner-text hr {
    width: 60%;
@@ -182,7 +182,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: #343434;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -209,11 +209,9 @@ ul#nav li.current a { color: #fe6928; }
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
-   padding-top: 6px;
 }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
-   margin-top: 6px;
    background: #444;
 }
 #about .download .button:hover {
@@ -231,7 +229,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: #28282B;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -241,6 +239,7 @@ ul#nav li.current a { color: #fe6928; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
+   color: #FFFFFF;
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -250,6 +249,7 @@ ul#nav li.current a { color: #fe6928; }
    padding-bottom: 6px;
 }
 #resume h3 {
+   color: #FFFFFF;
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
@@ -412,12 +412,12 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: #343434;
    padding-top: 90px;
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 30px/48px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -788,6 +788,18 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
+.contactForm {
+   padding-top: 3%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mail {
+   align-items: center;
+   justify-content: center;
+}
+
 #contact {
    background: #191919;
    padding-top: 96px;
@@ -844,8 +856,8 @@ call-to-action .button {
 #contact textarea,
 #contact select {
    padding: 10px 20px;
-	color: #eee;
-	background: #373233;
+	/* color: #eee; */
+	/* background: #373233; */
 	margin-bottom: 42px;
 	border: 0;
 	outline: none;
@@ -857,7 +869,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #0762f9;
+	/* background-color: #0762f9; */
 }
 #contact button.submit {
 	text-transform: uppercase;

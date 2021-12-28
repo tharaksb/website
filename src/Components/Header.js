@@ -8,12 +8,21 @@ class Header extends Component {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
-    // const description = this.props.data.description;
-    const linkedinURL = this.props.data.social1.linkedin;
-    const githubURL = this.props.data.social1.github;
-    const twitterURL = this.props.data.social1.twitter;
-    const instagramURL = this.props.data.social1.instagram;
-    const leetcodeURL = this.props.data.social1.leetcode;
+    const social = this.props.data.social;
+
+    function getSocialMediaContacts() {
+      let arr = [];
+      social.forEach(element => {
+        arr.push(
+          <li key={element.name}>
+              <a href={element.url} target="_blank" rel="noopener noreferrer">
+                <i className={element.className}></i>
+              </a>
+          </li>
+        )
+      });
+      return arr;
+    }
 
     return (
       <header id="home">
@@ -47,12 +56,6 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#portfolio">
-                Works
-              </a>
-            </li>
-
-            <li>
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
@@ -69,8 +72,8 @@ class Header extends Component {
               <Typewriter
                 textStyle={{
                   fontFamily: 'Red Hat Display',
-                  color: '#FFFFFF',
-                  fontWeight: 500,
+                  color: '#0F0F0F',
+                  fontWeight: 5000,
                   fontSize: '1.5em',
                 }}
                 options={{
@@ -91,31 +94,7 @@ class Header extends Component {
 
             <Fade bottom duration={2000}>
               <ul className="social">
-                <li key="linkedin">
-                  <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                <li key="github">
-                  <a href={githubURL} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-github"></i>
-                  </a>
-                </li>
-                <li key="instagram">
-                  <a href={instagramURL} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-instagram"></i>
-                  </a>
-                </li>
-                <li key="twitter">
-                  <a href={twitterURL} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li key="leetcode">
-                  <a href={leetcodeURL} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-code"></i>
-                  </a>
-                </li>
+                {getSocialMediaContacts()}
               </ul>
             </Fade>
         </div>

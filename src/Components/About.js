@@ -1,22 +1,14 @@
 import React, { Component } from "react";
 import { GoLocation } from 'react-icons/go';
-import { AiFillDownCircle } from 'react-icons/ai';
 import './About.css'
 import Fade from "react-reveal";
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
-
-    // const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    // const bio = this.props.data.bio;
-    // const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
-    // const zip = this.props.data.address.zip;
-    // const phone = this.props.data.phone;
-    // const email = this.props.data.email;
     const resumeDownload = this.props.data.resumedownload;
 
     return (
@@ -55,19 +47,9 @@ class About extends Component {
               </div>
 
               <div className="row">
-
                 <div className="columns contact-details">
-
-                  <h6 className="location-wrapper"> <GoLocation /> {' '} {city}{', '} {state} </h6> <br />
-
-                  <h2>Contact Me {' '}
-                    <a className="smoothscroll" href="#contact">
-                      <AiFillDownCircle size={27}/>
-                    </a>
-                  </h2>
-
+                  <h5 className="location-wrapper"> <GoLocation color="white" fontSize="1.5em"/> {' '} {city}{', '} {state} </h5> <br />
                 </div>
-
                 <div className="columns download">
                   <p>
                     <a href={resumeDownload} className="button" target="_blank" rel="noopener noreferrer">
@@ -75,7 +57,6 @@ class About extends Component {
                     </a>
                   </p>
                 </div>
-
               </div>
             </div>
           </div>
