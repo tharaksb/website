@@ -1,0 +1,175 @@
+{
+  "main": {
+    "name":"Tharak Sai Bobba",
+    "image":"profilepic.png",
+    "address":{
+      "city":"Irvine",
+      "state":"California"
+    },
+    "resumedownload":"https://drive.google.com/uc?export=download&id=1VABL7Xk_wmltLCL8ynAoK8_2c91U2cKX",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/bobbatharaksai/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/bobbatharaksai",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/bobbatharaksai",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/bobbatharaksai",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"leetcode",
+        "url":"https://leetcode.com/saitharak333/",
+        "className":"fa fa-code"
+      }
+    ]
+  },
+  "resume":{
+    "education":[
+      {
+        "school":"University of California, Irvine",
+        "degree":"Master of Science, Computer Science (Networked Systems)",
+        "graduated":"Decemeber 2022",
+        "description":"Courses: Design and Analysis of Algorithms, Machine Learning, Distributed Systems, Systems for ML, Computer Networks"
+      },
+      {
+        "school":"National Institute of Technology, Calicut",
+        "degree":"Bachelors in Technology, Communication Engineering",
+        "graduated":"April 2019",
+        "description":"Courses: Data Structures with C++, Pattern Recognition, Computer Architechture, Data Compression, Introdution to Programming, Computer Networks"
+      }
+    ],
+    "work":[
+      {
+        "company":"F5 Networks",
+        "title":"Software Engineer ",
+        "years":"September 2019 - August 2021",
+        "description": [
+          "Developed complex application signatures for Bittorent and various VPN, VOIP and streaming media apps.",
+          "Designed in-memory caching for URL-CAT component, enhanced message passing between two threads.",
+          "Identified deprecated app signatures and refactored classifiers to achieve overall performance gain of 5%.",
+          "Improved productivity of team 3 times by developing a signature generation tool from captures using NLP."
+        ]
+      },
+      {
+        "company":"Practo",
+        "title":"Software Devlopment Intern",
+        "years":"May 2018 - July 2018",
+        "description":[
+          "Optimized the user DB Queries with better indexing practices and attained a performance gain of 8%.",
+          "Refactored Invoice generation component on React-SpringBoot, authored automation with 80% coverage."
+        ]
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "image":"https://img.icons8.com/color/96/000000/python--v2.png"
+      },
+      {
+        "name":"C++",
+        "image":"https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"
+      },
+      {
+        "name":"C",
+        "image":"https://img.icons8.com/color/96/000000/c-programming.png"
+      },
+      {
+        "name":"JavaScript",
+        "image":"https://img.icons8.com/ios/100/000000/javascript--v2.png"
+      },
+      {
+        "name":"Java",
+        "image":"https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v2.png"
+      },
+      {
+        "name":"HTML",
+        "image":"https://img.icons8.com/ios/100/000000/html.png"
+      },
+      {
+        "name":"CSS",
+        "image":"https://img.icons8.com/ios/100/000000/css.png"
+      },
+      {
+        "name":"Golang",
+        "image":"https://img.icons8.com/color/96/000000/golang.png"
+      },
+      {
+        "name":"MySQL",
+        "image":"https://img.icons8.com/color/96/000000/mysql-logo.png"
+      },
+      {
+        "name":"ReactJS",
+        "image":"https://img.icons8.com/bubbles/100/000000/react.png"
+      },
+      {
+        "name":"SpringBoot",
+        "image":"https://img.icons8.com/color/96/000000/spring-logo.png"
+      },
+      {
+        "name":"Selenium",
+        "image":"https://img.icons8.com/ios-filled/100/000000/selenium-test-automation.png"
+      },
+      {
+        "name":"Django",
+        "image":"https://img.icons8.com/ios-filled/100/000000/django.png"
+      },
+      {
+        "name":"TensorFlow",
+        "image":"https://img.icons8.com/color/96/000000/tensorflow.png"
+      },
+      {
+        "name":"GITHUB",
+        "image":"https://img.icons8.com/bubbles/100/000000/github.png"
+      }
+    ],
+    "publications": [
+      {
+        "title":"Dynamic Channel Access Scheme",
+        "image":"802.11ah-wifi-halow-FI.png",
+        "url":"https://ieeexplore.ieee.org/document/9279391"
+      },
+      {
+        "title":"Seven Stage Speech Classifier",
+        "image":"3gpp.png",
+        "url":"https://link.springer.com/chapter/10.1007/978-981-15-2612-1_13"
+      }
+    ],
+    "projects": [
+      {
+        "title":"Indoor Potential Cluster Tracker, COVID-19",
+        "description":[
+          "Devised an application that can predict the spread of COVID-19 infections in an indoor environment.",
+          "Designed WiFi-based indoor positioning system to track individual’s activity using Decision Tree regressor.",
+          "App keeps track of distancing violations, notifies individual upon risk detection-primary contact to infected."
+        ]
+      },
+      {
+        "title":"Channel access schemes for IEEE 802.11ah",
+        "description":[
+          "Presented comparative study of Traditional DCF, 802.11e EDCA based Channel Access Scheme using HMM.",
+          "Proposed station grouping scheme for RAW channels using Hierarchical Clustering and Neural Networks.",
+          "The proposed model wrt uniform grouping attained fairness ratio of 0.945, 23% gain in norm throughput."
+        ]
+      },
+      {
+        "title":"Seven Stage Speech Classifier using Neural Networks",
+        "description":[
+          "Authored Voiced-Unvoiced-Transition-MultiSpeaker-Music-Silence-Noise audio classifier with 26 features.",
+          "A dataset with 1M entries was created from TIMIT and NOIZEUS data, an accuracy of 94.5% was achieved."
+        ]
+      }
+    ]
+  }
+}
