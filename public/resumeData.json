@@ -3,19 +3,19 @@
     "name":"Tharak Sai Bobba",
     "image":"profilepic.png",
     "address":{
-      "city":"Irvine",
+      "city":"Sunnyvale",
       "state":"California"
     },
     "resumedownload":"https://drive.google.com/uc?export=download&id=1VABL7Xk_wmltLCL8ynAoK8_2c91U2cKX",
     "social":[
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/bobbatharaksai/",
+        "url":"https://www.linkedin.com/in/tharakb/",
         "className":"fa fa-linkedin"
       },
       {
         "name":"github",
-        "url":"https://github.com/bobbatharaksai",
+        "url":"https://github.com/tharaksb",
         "className":"fa fa-github"
       },
       {
